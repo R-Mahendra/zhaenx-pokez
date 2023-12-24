@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Iceberg&family=Poppins:wght@200;300;400;500;600;700;800&family=Viga&family=Wallpoet&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: var(--font-default);
+}
+:root {
+	--bg-white: #e2e8f0;
+	--bg-primary: #6d28d9;
+	--bg-secondary: #4c1d95;
+	--zx-purple: #a78bfa;
+	--zx-text-white: #f1f5f9;
+	--zx-text-dark: #172554;
+	--zx-yellow-dark: #f59e0b;
+	--zx-yellow: #eab308;
+	--font-default: "Poppins", sans-serif;
+	--font-viga: "Viga", sans-serif;
+	--font-iceberg: "Iceberg", cursive;
+	--font-walpoet: "Wallpoet", sans-serif;
+	--font-twentieth-century: "Twentieth Century", sans-serif;
+	--shadow-first: 6px 6px 10px rgba(0, 0, 0, 1), 1px 1px 10px rgba(255, 255, 255, 0.6);
+	--shadow-secondary: 6px 6px 10px rgba(0, 0, 0, 1), 1px 1px 10px rgba(255, 255, 255, 0.6), inset 2px 2px 10px rgba(0, 0, 0, 1), inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}
+
+body {
+	background: var(--bg-white);
+	min-height: 100vh;
+	display: inline;
+	justify-content: center;
+	align-items: center;
+}
+
+/* NAVBAR START */
+#zx__Navbar {
+	padding: 1rem 4%;
+	background: var(--bg-primary);
+	border-bottom: 5px solid var(--zx-yellow-dark);
+	box-shadow: 0px 5px 10px var(--zx-text-dark);
+}
+
+#zx__Navbar .navbar-toggler {
+	color: var(--zx-text-white);
+}
+#zx__Navbar .navbar-brand {
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: var(--zx-text-white);
+	text-align: center;
+	font-style: italic;
+	text-decoration: none;
+	letter-spacing: 2px;
+	text-shadow: var(--shadow-first);
+	transition: 1s ease;
+}
+#zx__Navbar .navbar-brand span {
+	color: var(--zx-yellow);
+}
+#zx__Navbar .navbar-brand:hover {
+	transform: scale(1.2) translateX(20%);
+}
+#zx__Navbar .nav-item {
+	display: flex;
+	align-items: center;
+	color: var(--zx-text-white);
+}
+#zx__Navbar .nav-link {
+	color: var(--zx-text-white);
+	font-size: 1.3rem;
+	font-weight: 600;
+	position: relative;
+}
+
+#zx__Navbar .nav-link.active {
+	color: var(--zx-yellow);
+}
+#zx__Navbar .nav-link:hover {
+	color: var(--zx-yellow);
+}
+
+#zx__Navbar .nav-link::after {
+	position: absolute;
+	content: "";
+	height: 3px;
+	width: 50%;
+	background: var(--zx-yellow);
+	top: 80%;
+	left: 50%;
+	transform: translateX(-50%) scaleX(0);
+	transition: 0.3s ease;
+	border-radius: 1rem;
+}
+#zx__Navbar .nav-link:hover::after,
+#zx__Navbar .nav-link.active::after {
+	transform: translateX(-50%) scaleX(1);
+}
+/* NAVBAR END*/
+
+/* MAIN STYLE */
+.zx__Konten {
+	padding: 5rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+zx-custom-element {
+	font-size: 4.5rem;
+	font-weight: bold;
+	color: var(--bg-primary);
+	font-family: var(--font-twentieth-century);
+}
+
+.zx__Konten .cards {
+	margin-bottom: 2rem;
+	margin-top: 6rem;
+	background: var(--bg-primary);
+	padding: 3rem;
+	border-radius: 10px;
+	border: 4px solid var(--zx-yellow);
+	box-shadow: 0px 5px 10px var(--zx-text-dark);
+}
+.zx__Konten .cards .zx__ButtonSearch {
+	background: var(--zx-yellow-dark);
+	border: 2px solid var(--zx-yellow);
+	color: var(--zx-text-white);
+	font-size: 1.2rem;
+	font-weight: 500;
+	letter-spacing: 2px;
+	transition: 0.3s ease;
+}
+.zx__Konten .cards .zx__ButtonSearch:hover {
+	transform: scale(1.05);
+}
+.zx__Konten .cards .zx__ButtonSearch:active {
+	transform: scale(0.9);
+}
+
+.zx__cardPokemon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: var(--bg-primary);
+	color: var(--zx-text-white);
+	border-radius: 10px;
+	padding: 1.5rem 10px;
+}
+.zx__cardPokemon img {
+	width: 150px;
+	height: 150px;
+	border-radius: 10px;
+	background: var(--bg-secondary);
+	margin: 0.5rem 0;
+	padding: 1rem;
+	transition: 1s ease;
+	cursor: pointer;
+	border: 2px solid var(--zx-yellow-dark);
+}
+.zx__cardPokemon img:hover {
+	border: 0;
+	transform: scale(1.4) rotate(360deg);
+	background: transparent;
+}
+#zx__Button {
+	background: var(--zx-yellow);
+	color: var(--zx-text-dark);
+	font-weight: 600;
+	border: 0;
+	transition: 0.3s ease;
+}
+#zx__Button:active {
+	background: var(--zx-purple);
+	color: var(--zx-text-white);
+	transform: scale(0.9);
+}
+#zx__Button a {
+	text-decoration: none;
+}
+.textEmpety {
+	font-size: 3rem;
+	color: var(--bg-primary);
+	text-align: center;
+	font-weight: 500;
+	font-family: var(--font-walpoet);
+}
+
+#zx__ModalBoddy .card {
+	border-radius: 10px;
+	background: var(--bg-primary);
+	color: var(--zx-text-white);
+}
+
+#zx__ModalBoddy .modal-content .modal-title {
+	font-size: 2rem;
+	font-family: var(--font-walpoet);
+	font-weight: bold;
+	color: var(--bg-secondary);
+}
+
+.zx-custom-footer {
+	background: var(--bg-primary);
+	color: var(--zx-text-white);
+	border-top: 5px solid var(--zx-yellow-dark);
+	box-shadow: 0px 5px 10px var(--zx-text-dark);
+	padding: 1.5rem;
+	letter-spacing: 1px;
+}
+
+@media (max-width: 575.98px) {
+	html {
+		font-size: 60%;
+	}
+	.zx__cardPokemon img {
+		width: 100px;
+		height: 100px;
+	}
+}

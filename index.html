@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Reza Mahendra</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Reza Mahendra - Fundamental Frontend Developer,API" />
+		<meta name="keywords" content="rezamahendra.my.id, Pokemon-api" />
+		<meta name="author" content="Reza Mahendra" />
+		<meta name="theme-color" content="#6d28d9" />
+		<meta name="robots" content="index,follow" />
+		<meta name="googlebot" content="notranslate" />
+		<meta name="copyright" content="Copyright 2023" />
+		<meta name="format-detection" content="telephone=yes" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="title" content="Reza Mahendra" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Content-language" content="id" />
+		<meta http-equiv="refresh" />
+		<meta property="og:title" content="Reza Mahendra" />
+		<meta property="og:type" content="website" />
+	</head>
+	<body>
+		<!-- NAVBAR START -->
+		<nav class="navbar navbar-expand-lg fixed-top" id="zx__Navbar">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Zhaenx <span>PokeZ!</span></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- NAVBAR END -->
+		<!-- MAIN KONTEN START -->
+		<section class="zx__Konten" id="zx__Kontent">
+			<div class="container">
+				<div class="row d-flex justify-content-center align-items-center">
+					<div class="col-lg-12 text-center pt-5 mt-5">
+						<zx-custom-element></zx-custom-element>
+					</div>
+					<div class="row d-flex justify-content-center align-items-center sticky-top">
+						<div class="cards col-lg-12">
+							<form class="d-flex" role="search" id="zx__FormSearch">
+								<input class="form-control me-2" id="Inputan" type="search" placeholder="Masukkan nama Pokemon . . . !" aria-label="Search" />
+								<button class="btn zx__ButtonSearch" type="submit">Cari</button>
+							</form>
+						</div>
+					</div>
+					<div class="row d-flex justify-content-center align-items-center py-5" id="zx__result"></div>
+				</div>
+			</div>
+		</section>
+		<!-- MODAL -->
+		<div class="modal fade" id="zx__MODAL" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header px-4">
+						<h5 class="modal-title" id="exampleModalLabel">Detail Pokemon</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body" id="zx__ModalBoddy"></div>
+				</div>
+			</div>
+		</div>
+		<!-- MAIN KONTEN END -->
+		<!-- FOOTER -->
+		<zx-custom-footer></zx-custom-footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	</body>
+</html>
