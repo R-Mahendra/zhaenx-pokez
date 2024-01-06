@@ -1,6 +1,7 @@
 class MyCustomElement extends HTMLElement {
 	connectedCallback() {
-		this.innerHTML = "~ Zhaenx PokeZ ~";
+		this.innerHTML = `~ Zhaenx PokeZ ~
+		<p class="mb-0">1.000 pokemon</p>`;
 	}
 }
 
